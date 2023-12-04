@@ -68,16 +68,6 @@ body {
 
 }
 
-.apresentacao__conteudo__texto__atividades__link {
-    text-decoration: none;
-    color: #F6F6F6;
-}
-
-.apresentacao__conteudo__texto__atividades__link:hover {
-    text-decoration: none;
-    color: #22D4FD;
-}
-
 .apresentacao__conteudo__texto__atividades__subitens {
     margin-left: 5%;
 }
