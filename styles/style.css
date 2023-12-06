@@ -25,10 +25,11 @@ body {
 }
 
 .cabecalho {
-    padding: 2% 0% 2% 15%;
+    padding: 1% 0% 1% 15%;
     border-bottom: 1px solid #F0F0F0;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     position: sticky;   
+    background-color: var(--cor-1);
     top: 0; 
 }
 
@@ -39,10 +40,14 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--font-2);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-3);  
     text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-4);
 }
 
 .apresentacao {
@@ -50,31 +55,32 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--font-1);
 }
 
 .apresentacao__conteudo__titulo_cv{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-family: var(--font-1);
 }
 
 .destaque-titulo {
-    color: var(--cor-3);
+    color: var(--cor-4);
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--font-2);;
 }
 
@@ -83,8 +89,12 @@ body {
     color: var(--cor-3);
 }
 
+.apresentacao__conteudo__texto__link:hover {
+    color: var(--cor-4);
+}
+
 .apresentacao__conteudo__texto__atividades {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: var(--font-2);;
 
 }
@@ -114,39 +124,59 @@ body {
 .apresentacao__links__subtitulo {
     font-family: var(--font-1); 
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.apresentacao__links__link {
+.apresentacao__links__navegacao {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 50rem;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0px;
     text-decoration: none;
     color: var(--cor-1);    
     font-family: var(--font-2);
     border: 2px solid var(--cor-borda);
-    background-color: #21BAAD;
-    color: var(--cor-2);
+    background-color: var(--cor-3);
+    color: var(--cor-1);
 }
 
 .apresentacao__links__link:hover {
-    background-color: var(--cor-hover);
-    color: var(--cor-1);
-    
+    background-color: var(--cor-hover);    
+}
+
+.apresentacao__imagem {
+    width: 50%;
 }
 
 .rodape {
-    padding: 24px;
+    padding: 12px;
     color: var(--cor-1);
     background-color: var(--cor-3);
     text-align: center;
     font-family: var(--font-2);;
-    font-size: 24px;
+    font-size: 1.125rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }    
 }
