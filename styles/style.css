@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
+:root {
+    --cor-1: #FEFEFE;
+    --cor-2: #1C252E;
+    --cor-3: #21BAAD;
+    --cor-4: #FC7F3E;
+    --cor-hover: #1A9E93;
+    --cor-borda: #D7DDE6;
+    
+    --font-1: 'Krona One', sans-serif;
+    --font-2: 'Montserrat', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +20,16 @@
 
 body {
     box-sizing: border-box;
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--cor-1);
+    color: var(--cor-2);
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 15%;
+    padding: 2% 0% 2% 15%;
+    border-bottom: 1px solid #F0F0F0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    position: sticky;   
+    top: 0; 
 }
 
 .cabecalho__menu {
@@ -22,10 +38,10 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);
     font-size: 24px;
     font-weight: 600;
-    color:#22D4FD;  
+    color: var(--cor-3);  
     text-decoration: none;
 }
 
@@ -45,37 +61,42 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--font-1);
 }
 
 .apresentacao__conteudo__titulo_cv{
     font-size: 30px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--font-1);
 }
 
 .destaque-titulo {
-    color: #22D4FD;
+    color: var(--cor-3);
 }
 
 .apresentacao__conteudo__texto {
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);;
+}
+
+.apresentacao__conteudo__texto__link {
+    text-decoration: none;
+    color: var(--cor-3);
 }
 
 .apresentacao__conteudo__texto__atividades {
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);;
 
 }
 
 .apresentacao__conteudo__texto__atividades__link {
     text-decoration: none;
-    color: #F6F6F6;
+    color: var(--cor-2);
 }
 
 .apresentacao__conteudo__texto__atividades__link:hover {
     text-decoration: none;
-    color: #22D4FD;
+    color: var(--cor-3);
 }
 
 .apresentacao__conteudo__texto__atividades__subitens {
@@ -91,7 +112,7 @@ body {
 }
 
 .apresentacao__links__subtitulo {
-    font-family: 'Krona One', sans-serif; 
+    font-family: var(--font-1); 
     font-weight: 400;
     font-size: 24px;
 }
@@ -102,26 +123,30 @@ body {
     gap: 16px;
     width: 378px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 50rem;
     font-size: 24px;
     font-weight: 600;
     padding: 21.5px 0px;
     text-decoration: none;
-    color: #F6F6F6;    
-    font-family: 'Montserrat', sans-serif;
-    border: 2px solid #22D4FD;
+    color: var(--cor-1);    
+    font-family: var(--font-2);
+    border: 2px solid var(--cor-borda);
+    background-color: #21BAAD;
+    color: var(--cor-2);
 }
 
 .apresentacao__links__link:hover {
-    background-color: #272727;
+    background-color: var(--cor-hover);
+    color: var(--cor-1);
+    
 }
 
 .rodape {
     padding: 24px;
-    color: #000000;
-    background-color: #22D4FD;
+    color: var(--cor-1);
+    background-color: var(--cor-3);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-2);;
     font-size: 24px;
     font-weight: 400;
 }
